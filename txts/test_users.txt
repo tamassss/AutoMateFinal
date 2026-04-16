@@ -1,0 +1,16 @@
+user1@teszt.com
+12345
+- 12 hónap adat
+
+user2@teszt.com
+12345
+- 3 hónap adat
+
+superadmin@teszt.com
+12345
+
+admin@teszt.com
+12345
+
+moderator@teszt.com
+12345

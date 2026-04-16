@@ -1,0 +1,49 @@
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.service-table-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.custom-table th {
+    text-align: center;
+    color: #075DBF;
+    padding: 15px;
+    border-bottom: 2px solid rgb(82, 82, 82);
+    font-weight: bold;
+}
+
+.custom-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    vertical-align: middle;
+}
+
+.reminder-date {
+    font-weight: 500;
+}
+
+.reminder-km {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin-top: 2px;
+}
+
+.service-log-top-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 768px){
+    .service-table-scroll .custom-table {
+        min-width: 620px;
+    }
+}

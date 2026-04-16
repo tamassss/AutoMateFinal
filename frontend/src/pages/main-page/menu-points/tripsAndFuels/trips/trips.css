@@ -1,0 +1,19 @@
+.col-xl-3 .card{
+    min-width: 280px;
+}
+
+.trips-month-title {
+    color: #89C4FF;
+}
+
+
+@media (max-width: 768px) {
+    .col-10 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

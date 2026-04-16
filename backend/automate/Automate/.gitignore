@@ -1,0 +1,77 @@
+# --------------------------
+# Python Bytecode
+# --------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --------------------------
+# Virtual environment
+# --------------------------
+venv/
+env/
+ENV/
+
+# --------------------------
+# Django
+# --------------------------
+*.sqlite3
+db.sqlite3
+*.log
+media/
+staticfiles/
+*.pot
+*.pyc
+*.pyo
+*.pyd
+
+# --------------------------
+# Migrations
+# -------------------------
+AutoApp/migrations/__pycache__/
+AutoApp/migrations/*.pyc
+
+# --------------------------
+# IDE / Editor files
+# --------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --------------------------
+# OS generated files
+# --------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --------------------------
+# Test / temp / coverage
+# --------------------------
+.coverage
+htmlcov/
+.tox/
+.nox/
+pytest_cache/
+.cache/
+nosetests.xml
+coverage.xml
+
+# --------------------------
+# Python packaging
+# --------------------------
+*.egg-info/
+dist/
+build/
+
+# --------------------------
+# Database dumps
+# --------------------------
+database.sql
+
+# --------------------------
+# Secret / credentials files (optional)
+# --------------------------
+*.env
+.env

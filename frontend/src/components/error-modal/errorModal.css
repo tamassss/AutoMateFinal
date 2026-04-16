@@ -1,0 +1,65 @@
+.error-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 5px;
+    background: rgba(10, 12, 16, 0.72);
+    backdrop-filter: blur(1px);
+}
+
+.error-div {
+    position: relative;
+    width: min(560px, calc(100vw - 32px));
+    border-radius: 10px;
+    border: 1px solid #4a1b1f;
+    border-left: 5px solid #e34b5b;
+    background: #13161b;
+    color: #ffffff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45), 0 0 24px rgba(227, 75, 91, 0.25);
+    animation: errorSlideIn 0.5s ease-out;
+}
+
+.error-close-img {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 16px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.error-close-img:hover {
+    opacity: 1;
+}
+
+.error-content {
+    padding: 18px 22px;
+}
+
+.error-text {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff7b88;
+}
+
+.error-description {
+    margin: 8px 0 0 0;
+    padding-right: 24px;
+    opacity: 0.9;
+    line-height: 1.45;
+}
+
+@keyframes errorSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,13 @@
+.btn-outline-danger {
+    color: #ff4d4d;
+    border-color: #ff4d4d;
+}
+
+.btn-outline-danger:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+h2 {
+    letter-spacing: 2px;
+}

@@ -1,0 +1,55 @@
+.avg-cons-div{
+    margin-bottom: 50px;
+}
+
+.custom-title{
+    font-size: 30px;
+}
+
+.custom-subtitle {
+    font-size: 20px;
+    color: #ffffff90;
+}
+
+.avg-cons-div .input{
+  font-size: 16px;
+  padding: 8px;
+  height: 40px;
+}
+
+.avg-cons-div hr {
+    margin: 32px 0;
+}
+
+
+.step-span {
+    color: rgb(150, 150, 150);
+    font-size: 1.3rem;
+}
+
+.btn-div button{
+    margin-bottom: 10px;
+}
+
+.card-content {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .avg-cons-div hr {
+        margin: 24px 0;
+    }
+
+    .step-span {
+        font-size: 1rem; 
+    }
+
+    .custom-title{
+        font-size: 20px;
+    }
+
+    .custom-subtitle{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,11 @@
+*** PROJEKT INDÍTÁSA ***
+cd frontend
+npm i
+npm run dev
+----------------
+
+*** TESZTEK ***
+cd frontend
+npm i
+npm test
+----------------

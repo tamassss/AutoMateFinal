@@ -1,0 +1,25 @@
+.community-compare-wrap {
+  width: 100%;
+}
+
+.community-compare-wrap {
+  min-width: min(1100px, 100%);
+}
+
+.community-compare-charts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.community-compare-chart-item {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 18px;
+}
+
+@media (max-width: 1200px) {
+  .community-compare-wrap {
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,37 @@
+.new-trip-result-table-wrap {
+    margin-top: 12px;
+    width: 100%;
+}
+
+.estimate-title {
+    color: #7ec8ff;
+}
+
+.new-trip-result-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+.new-trip-result-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+}
+
+.new-trip-result-table td:first-child {
+    opacity: 0.8;
+    width: 45%;
+}
+
+.new-trip-result-table td:last-child {
+    text-align: right;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .new-trip-result-table td {
+        font-size: 0.82rem;
+    }
+}

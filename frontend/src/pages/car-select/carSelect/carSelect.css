@@ -1,0 +1,312 @@
+body{
+    user-select: none;
+}
+
+.car-select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.car-select-empty{
+    min-height: 45vh;
+    align-items: center;
+}
+
+.car-layout{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 1600px;
+}
+
+
+.side{
+    transition: 0.3s;
+    flex: 1;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.5;
+    transition: transform 0.3s ease;
+}
+
+.side:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+    opacity: 0.7;
+}
+
+.side-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-image{
+    width: 10vw;
+    height: 10vw;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 150px;
+    max-height: 150px;
+    background-color: rgb(165, 165, 165);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.side-image img {
+    width: 70%;
+    height: auto;
+}
+
+.car-name-small{
+    font-size: 1.2rem;
+}
+
+.main-car{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-from-right{
+    animation: mainCarSlideFromRight 0.5s ease;
+}
+
+.slide-from-left{
+    animation: mainCarSlideFromLeft 0.5s ease;
+}
+
+@keyframes mainCarSlideFromRight{
+    from{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes mainCarSlideFromLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.main-image{
+    transition: 0.5s;
+    position: relative;
+    background: rgb(168, 168, 168);
+    border-radius: 50%;
+    width: 20vw; 
+    height: 20vw;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 300px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 50px rgba(255,255,255,0.2);
+}
+
+.main-image:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.679);
+    cursor: pointer;
+}
+
+.main-car-img{
+    width: 80%;
+    height: auto;
+}
+
+
+.main-info{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.mobile-arrow{
+    display: none;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.mobile-arrow img{
+    width: 60px;
+    height: 60px;
+}
+
+.main-info button{
+    width: 150px;
+}
+
+/* rendszám */
+.license-outer{
+    margin: 14px auto 18px;
+    width: 280px;
+    background: linear-gradient(180deg, #fefefe 0%, #d6d6d6 100%);
+    border: 2px solid #7b7b7b;
+    border-radius: 8px;
+    padding: 4px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.28);
+}
+
+.license-inner{
+    display: flex;
+    align-items: center;
+    min-height: 86px;
+    background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.license-blue{
+    flex: 0 0 46px;
+    align-self: stretch;
+    background-color: #0b56b5;
+    background-image: url("../../../assets/icons/license_plate.png");
+    background-size: 90% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.license-white{
+    flex: 1;
+    min-height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+}
+
+.license-plate{
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #111111;
+    font-size: clamp(1.55rem, 3vw, 2.1rem);
+    font-weight: 800;
+    letter-spacing: clamp(0.04em, 0.2vw, 0.12em);
+    font-family: "Arial Black", Arial, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.license-plate-long{
+    font-size: 1.7rem;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 1024px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
+    .side-name {
+        font-size: 1rem;
+    }
+    .car-layout {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px){
+    .car-select{
+        margin: 0;
+        flex: 1 1 auto;
+        min-height: 0;
+    }
+
+    .car-layout{
+        width: 100%;
+        gap: 5px;
+    }
+
+    .main-image{
+        width: clamp(130px, 24vh, 180px);
+        height: clamp(130px, 24vh, 180px);
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile-arrow{
+        display: block;
+    }
+
+    .side{
+        flex: 0 0 44px;
+    }
+
+    .main-info{
+        margin-top: 10px;
+    }
+
+    .main-title{
+        font-size: 1.2rem;
+    }
+
+    .license-outer{
+        width: clamp(200px, 58vw, 240px);
+        margin: 8px auto 10px;
+    }
+
+    .license-inner{
+        min-height: 60px;
+    }
+
+    .license-blue{
+        flex-basis: 34px;
+    }
+
+    .license-white{
+        min-height: 58px;
+        padding: 0 8px;
+    }
+
+    .license-plate{
+        font-size: 1.4rem;
+        letter-spacing: 0.1em;
+    }
+
+    .license-plate-long{
+        font-size: 1.2rem;
+        letter-spacing: 0.03em;
+    }
+
+    .mobile-arrow img{
+        width: 44px;
+        height: 44px;
+    }
+}

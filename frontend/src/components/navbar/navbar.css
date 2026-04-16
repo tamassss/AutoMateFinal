@@ -1,0 +1,92 @@
+.custom-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 70px;
+    padding: 0 20px;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.nav-icons-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-icons {
+    height: 40px;
+    width: 40px;
+}
+
+.nav-title-div {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.mate-span {
+    color: #075DBF;
+}
+
+.brand {
+    cursor: pointer;
+    margin: 0;
+    line-height: 1;
+}
+
+.help-div {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.settings-div {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.settings-icon {
+    height: 35px;
+    width: 35px;
+    display: block;
+}
+
+.help-link img {
+    height: 35px;
+    width: 35px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .nav-title-div {
+        font-size: 1.2rem;
+    }
+
+    .custom-navbar{
+        gap: 15px;
+    }
+
+    .nav-icons {
+        height: 32px;
+        width: 32px;
+    }
+
+    .settings-icon,
+    .help-link img {
+        height: 30px;
+        width: 30px;
+    }
+}

@@ -1,0 +1,16 @@
+tr, h2{
+    color: white;
+}
+
+
+.statistics-div{
+    width: 90vw;
+    align-items: center;
+    margin: 0 auto 0 auto;
+}
+
+@media(max-width: 768px){
+    .general-stat-row {
+        font-size: 0.8rem;
+    }
+}

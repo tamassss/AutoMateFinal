@@ -1,0 +1,76 @@
+.trip-card-header{
+    margin-top: 10px;
+}
+
+.trip-card-header h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.trip-card-body {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.trip-card-body p{
+    margin: 0px;
+    font-size: 16px;
+}
+
+.trip-stat {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.trip-card-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.badge-row {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.edit-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.empty-state {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trip-card-footer button{
+    margin: 10px auto;
+}
+
+@media (max-width:768px){
+    .trip-card-header h3{
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .trip-card-header p{
+        margin-bottom: -10px;
+    }
+
+    .trip-card-footer button{
+        margin-bottom: 20px;
+    }
+    
+    .hr-div{
+        margin-top: 25px;
+    }
+}

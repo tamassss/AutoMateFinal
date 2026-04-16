@@ -1,0 +1,38 @@
+﻿.limit-btn-wrapper button{
+    width: 12vh;
+}
+
+.table-title-tr th{
+    background-color: #35363b;
+    font-size: 1.3rem;
+    box-shadow: inset 0 0 10px 2px black;
+    border: 2px solid black;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.dashboard-gauge-test-link {
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    color: #075DBF;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.dashboard-gauge-test-link:hover,
+.dashboard-gauge-test-link:focus-visible,
+.dashboard-gauge-test-link:active {
+    background: transparent;
+    color: #0A74ED;
+    border: none;
+    box-shadow: none;
+    transform: none;
+}
+
+.average-consumption-title {
+    color: #7ec8ff;
+}

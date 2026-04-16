@@ -1,0 +1,129 @@
+.admin-page {
+  min-height: 100vh;
+}
+
+.admin-page-content {
+  padding-top: 28px;
+  padding-bottom: 30px;
+}
+
+.admin-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.admin-title {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.admin-home-link {
+  color: #7ec8ff;
+  text-decoration: underline;
+}
+
+.admin-search-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: nowrap;
+  margin-bottom: 15px;
+}
+
+.admin-search-row .input {
+  width: 100%;
+  max-width: 420px;
+  margin: 0;
+}
+
+.admin-action-btn,
+.admin-delete-btn {
+  border: 1px solid #111;
+  border-radius: 8px;
+  padding: 7px 10px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.admin-action-btn:hover,
+.admin-delete-btn:hover {
+  border-width: 1px;
+}
+
+.admin-action-btn {
+  background: #2d7fdd;
+}
+
+.admin-search-btn {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+.admin-delete-btn {
+  background: #a53232;
+}
+
+.admin-cell-input {
+  width: 100%;
+  min-width: 140px;
+  background: #1f222a;
+  color: #fff;
+  border: 1px solid #4a4f5b;
+  border-radius: 6px;
+  padding: 6px 8px;
+}
+
+.admin-role-select {
+  width: 100%;
+  min-width: 170px;
+}
+
+.admin-table .input {
+  min-width: 140px;
+  margin: 0;
+}
+
+.admin-buttons-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-self-row {
+  opacity: 0.9;
+}
+
+.superadmin-tag {
+  color: #7ec8ff;
+  font-weight: 700;
+}
+
+.admin-error {
+  color: #ff6b6b;
+}
+
+.admin-loading-wrap {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .admin-search-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .admin-search-input {
+    max-width: 100%;
+  }
+}
+
+.admin-table tr.odd > td {
+  background-color: #1515158e;
+}
+
+.admin-table tr.even > td {
+  background-color: #35363b8e;
+}

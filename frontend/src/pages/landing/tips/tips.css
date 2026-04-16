@@ -1,0 +1,110 @@
+.tips-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #1a1b1f;
+}
+
+.tips-full-height {
+    flex: 1;
+    display: flex;
+}
+
+.tips-full-height .row {
+    margin: 0;
+    width: 100%;
+}
+
+.tip-link {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tip-link p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.65);
+    text-transform: uppercase;
+    transition: transform 0.2s ease;
+}
+
+.tip-link:hover p {
+    transform: scale(1.06);
+}
+
+.tip-link img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.indicators{
+    background-image: url("../../../assets/background/indicators.jpg");
+    background-size: cover;
+    filter: grayscale();
+    transition: 0.3s;
+}
+
+.fuel-saving{
+    background-image: url("../../../assets/background/fuel-saving.jpg");
+    background-size: cover;
+    filter: grayscale();
+    transition: 0.3s;
+}
+
+.parking-tips{
+    background-image: url("../../../assets/background/parking-tips.jpg");
+    background-size: cover;
+    filter: grayscale();
+    transition: 0.3s;
+}
+
+.indicators:hover, .fuel-saving:hover, .parking-tips:hover{
+    filter: none;
+    transition: 0.3s;
+}
+
+@media (max-width: 992px) {
+    .tips-page-wrapper {
+        height: auto;
+        min-height: 100vh;
+        overflow: auto;
+    }
+
+    .tips-full-height .row {
+        flex-direction: column;
+    }
+
+    .tip-link {
+        min-height: 220px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+@media (max-width: 576px) {
+    .tip-link {
+        min-height: 180px;
+        padding: 14px;
+    }
+
+    .tip-link p {
+        font-size: 1.2rem;
+        margin-top: 0;
+        padding: 8px 12px;
+    }
+}

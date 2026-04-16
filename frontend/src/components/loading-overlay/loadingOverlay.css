@@ -1,0 +1,23 @@
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 12, 16, 0.72);
+  backdrop-filter: blur(2px);
+  pointer-events: all;
+}
+
+.loading-overlay-box {
+  padding: 18px 24px;
+  border-radius: 10px;
+  border: 1px solid #2a2f39;
+  background: #13161b;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+}

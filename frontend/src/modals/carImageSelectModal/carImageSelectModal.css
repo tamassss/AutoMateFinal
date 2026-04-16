@@ -1,0 +1,44 @@
+.car-image-select-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  justify-items: center;
+}
+
+.car-image-select-option {
+  width: 124px;
+  min-height: 148px;
+  border-radius: 20px;
+  border: 2px solid #6b6b6b;
+  background: #2c2f36;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+}
+
+.car-image-select-option.is-active {
+  border-color: #0a6ddf;
+  box-shadow: 0 0 0 2px rgba(10, 109, 223, 0.25);
+}
+
+.car-image-select-img {
+  width: 94%;
+  height: auto;
+}
+
+.car-image-select-type {
+  color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .car-image-select-option {
+    width: 100px;
+    min-height: 132px;
+  }
+}

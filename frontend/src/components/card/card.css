@@ -1,0 +1,43 @@
+.card {
+    background-color: #282E3A;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: inset 0 0 15px 5px black;
+    border: 2px solid black;
+    padding: 5px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.card form {
+    width: 100%;
+    min-width: 0;
+}
+
+.card h3{
+    color: #7ec8ff;
+    padding-top: 10px;
+}
+
+.card::-webkit-scrollbar {
+  width: 6px;
+  
+}
+
+.card::-webkit-scrollbar-thumb {
+  background: #51535B;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .card h3 {
+        font-size: 1rem;
+    }
+}

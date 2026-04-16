@@ -1,0 +1,72 @@
+.main-menu-layout {
+  display: flex;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.main-menu-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.main-menu-layout .flex-grow-1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+  max-height: 100vh;
+  min-width: 0;
+}
+
+.main-menu-layout .flex-grow-1 > div {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #51535B transparent;
+}
+
+.main-menu-layout .flex-grow-1 > div::-webkit-scrollbar {
+  width: 6px;
+}
+
+.main-menu-layout .flex-grow-1 > div::-webkit-scrollbar-thumb {
+  background: #51535B;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .main-menu-layout {
+    display: block;
+    height: auto;
+    max-height: none;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .main-menu-content {
+    flex: 0 0 auto;
+    width: 0;
+    height: 0;
+    max-height: 0;
+    overflow: visible;
+  }
+
+  .main-menu-layout .flex-grow-1 {
+    height: auto;
+    max-height: none;
+    overflow: visible;
+    display: block;
+  }
+
+  .main-menu-layout .flex-grow-1 > div {
+    flex: initial;
+    min-height: initial;
+    overflow-y: visible;
+  }
+}

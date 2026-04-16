@@ -1,0 +1,9 @@
+@media (max-width:768px){
+    .hr-optional-div hr{
+        margin: 10px;
+    }
+
+    .hr-optional-div span{
+        font-size: 15px;
+    }
+}

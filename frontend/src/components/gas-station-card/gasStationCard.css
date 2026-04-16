@@ -1,0 +1,98 @@
+.gas-station-card-content {
+    width: 100%;
+}
+
+.gas-station-card-body {
+    padding-inline: 10px;
+}
+
+.gas-station-card-row {
+    gap: 28px;
+}
+
+.gas-station-card-value {
+    min-width: 120px;
+}
+
+.date-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gas-station-share-status {
+    margin: 4px 0 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.gas-station-share-status.pending {
+    color: #ffc107;
+}
+
+.gas-station-share-status.approved {
+    color: #4CAF50;
+}
+
+.station-icon {
+    width: 70px;
+    height: auto;
+}
+
+.price {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.fuel-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.station-city {
+    font-size: 1.2rem;
+}
+
+.station-address {
+    font-size: 0.9rem;
+}
+
+.fuel-button button{
+    width: 120px;
+}
+
+.gas-station-card-actions {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+@media(max-width:768px){
+
+    .gas-station-card-row {
+        gap: 16px;
+    }
+
+    .gas-station-card-value {
+        min-width: 90px;
+    }
+
+    .card{
+        padding: 0;
+    }
+
+    .price{
+        font-size: 1.5rem;
+    }
+
+    .station-city{
+        font-size: 1rem;
+    }
+
+    .station-address{
+        font-size: 0.8rem;
+    }
+
+    .fuel-button button{
+        width: 100px;
+        margin: 20px auto;
+    }
+}

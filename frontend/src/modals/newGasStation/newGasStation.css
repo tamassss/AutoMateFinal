@@ -1,0 +1,14 @@
+.modal-select-group {
+  margin: 12px 0;
+}
+
+.modal-select-label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.modal-select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+}

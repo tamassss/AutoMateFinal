@@ -1,0 +1,108 @@
+.auth-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-help-div {
+    position: fixed;
+    right: 14px;
+    top: 14px;
+    z-index: 20;
+}
+
+.landing-help-link img {
+    height: 35px;
+    width: 35px;
+    display: block;
+}
+
+.auth-tabs{
+    height: 50px;
+
+    display: flex;
+    margin: 20px auto;
+    background: #000000;
+    border-radius: 5px;
+    
+    overflow: hidden;
+}
+
+.auth-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.active{
+    background-color: #075DBF;
+    box-shadow: inset 0 0 5px 5px black;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+.inactive{
+    box-shadow: inset 0 0 10px 5px black;
+    border: 1px solid black;
+    border-radius: 7px;
+    background: #2f3136;
+}
+
+
+h1, h2{
+    text-align: center;
+}
+
+.custom-h2{
+    margin-bottom: 50px;
+}
+
+.features{
+    margin-top: 100px;
+    margin-left: 15%;
+    width: 50%;
+}
+
+h3{
+    font-size: 24px;
+}
+
+@media (max-width: 1600px) {
+    .custom-title {
+        font-size: 3rem;
+    }
+    .custom-h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .landing-help-div {
+        right: 10px;
+        top: 10px;
+    }
+
+    .custom-title{
+        padding-top: 30px;
+    }
+
+    .features{
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .auth-tab{
+        font-size: 1rem;
+    }
+
+    .auth-div{
+        margin-top: -40px;
+    }
+}

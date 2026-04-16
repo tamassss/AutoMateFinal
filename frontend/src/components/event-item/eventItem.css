@@ -1,0 +1,17 @@
+.event-item {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.event-item-title {
+  color: #89C0FF;
+  font-size: 15px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.event-detail-text {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}

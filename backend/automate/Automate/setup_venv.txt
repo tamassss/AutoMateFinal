@@ -1,0 +1,37 @@
+dependencies: 
+django
+mysqlclient
+asgiref
+sqlparse
+pip (built-in)
+
+
+-------------Create a new clean venv---------------
+
+From inside your project folder:
+
+python pip install venv
+python3 -m venv //venv
+source venv/bin/activate
+
+----------Create a requirements.txt file---------------
+
+Create a new file named:
+
+requirements.txt
+
+
+Put this inside it:
+
+django==6.0
+mysqlclient==2.2.7
+asgiref==3.11.0
+sqlparse==0.5.4
+
+----------Install the dependencies------------
+Run:
+
+pip install -r requirements.txt
+
+--------start server ----------
+python manage.py runserver
